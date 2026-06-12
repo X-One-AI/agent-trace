@@ -6,7 +6,7 @@ Generic AI agent tracing is deferred; only failure-packet-shaped evidence remain
 
 ## Status
 
-`P3` - deferred decision repository.
+`v0.1.0` - deferred tracing decision and failure-packet evidence wedge.
 
 ## Purpose
 
@@ -16,12 +16,18 @@ Avoid competing head-on with established tracing and observability platforms.
 
 Decision log that prevents scope creep and captures failure-packet-relevant ideas.
 
+This repository intentionally does not ship a tracing backend, dashboard, or CLI in v0.1.0.
+
 ## Required Evidence
 
 - deferred rationale
 - competition notes
 - allowed evidence wedge
 - delete-or-merge review cadence
+
+## Decision
+
+Generic agent tracing is deferred. Only packet-shaped trace evidence that improves `agent-failure-packet` remains in scope.
 
 ## Non-Goals
 
@@ -40,6 +46,9 @@ Inputs that require user or real-world data are recorded in `../x-one-skipped-in
 ## Docs
 
 - [Product Foundation](./docs/product-foundation.md)
+- [Defer Decision](./docs/defer-decision.md)
+- [Evidence Wedge](./docs/evidence-wedge.md)
+- [Review Cadence](./docs/review-cadence.md)
 - [OPT Overlay](./ops/opt-overlay.md)
 - [Production Constraints](./ops/constraints/production.md)
 - [Main Entry Constraints](./ops/constraints/main-entry.md)

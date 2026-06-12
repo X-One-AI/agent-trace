@@ -3,7 +3,7 @@
 ## Intake
 
 - Priority: P3
-- Status: deferred decision repository
+- Status: v0.1.0 deferred tracing decision and failure-packet evidence wedge
 - Positioning: Generic AI agent tracing is deferred; only failure-packet-shaped evidence remains in scope.
 - Primary route: Product -> Architecture -> Expert/Security -> QA -> Implementation -> Completion readiness
 
@@ -38,6 +38,8 @@ Avoid competing head-on with established tracing and observability platforms.
 - The first production surface is local-first or review-first, not a hosted dashboard by default.
 - Reports, packets, indexes, or labs must be redaction-safe by design.
 - Every risky claim links to evidence, rule logic, or an explicit limitation.
+- The repository explicitly defers generic tracing.
+- Packet-shaped trace fields are documented for possible absorption into `agent-failure-packet`.
 
 ## Architecture Brief
 
@@ -50,7 +52,7 @@ Avoid competing head-on with established tracing and observability platforms.
 ### Data Flow
 
 ```text
-input evidence -> normalize -> redact -> evaluate -> render reviewable artifact
+trace idea -> packet-shaped evidence check -> merge into agent-failure-packet / reject / reopen decision
 ```
 
 ### Risks
@@ -61,18 +63,19 @@ input evidence -> normalize -> redact -> evaluate -> render reviewable artifact
 
 ## QA Plan
 
-- Unit-test redaction and normalization before rule or report expansion.
-- Add positive and negative fixtures for every behavior boundary.
-- Verify generated artifacts do not include raw secrets.
+- Verify no README or docs imply a tracing backend exists.
+- Verify useful trace fields are routed to `agent-failure-packet`.
+- Verify raw prompts, tool payloads, secrets, and private data remain excluded.
 - Keep bilingual README guidance aligned.
 
 ## Implementation Plan
 
-1. Keep this foundation branch small and reviewable.
-2. Add the first executable surface only after the missing inputs are resolved or explicitly skipped.
-3. Use feature branches named `feat/<scope>` or `docs/<scope>`.
-4. Use Conventional/Angular commits such as `feat: add packet schema` or `docs: clarify deferred scope`.
-5. Never push directly to `main`; open a pull request from the feature branch.
+1. Keep this as a decision repository until reopen criteria are met.
+2. Merge useful packet-shaped fields into `agent-failure-packet`.
+3. Delete generic dashboard ideas that weaken positioning.
+4. Use feature branches named `docs/<scope>`.
+5. Use Conventional/Angular commits such as `docs: clarify trace wedge`.
+6. Never push directly to `main`; open a pull request from the feature branch.
 
 ## Skipped Inputs
 

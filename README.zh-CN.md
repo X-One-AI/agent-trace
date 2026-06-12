@@ -6,7 +6,7 @@
 
 ## 状态
 
-`P3` - deferred decision repository。
+`v0.1.0` - deferred tracing decision 和 failure-packet evidence wedge。
 
 ## 目的
 
@@ -14,7 +14,9 @@ Avoid competing head-on with established tracing and observability platforms.
 
 ## 第一生产化表面
 
-Decision log that prevents scope creep and captures failure-packet-relevant ideas.
+Decision log：防止 scope creep，并只保留对 failure packet 有帮助的 trace evidence。
+
+v0.1.0 明确不发布 tracing backend、dashboard 或 CLI。
 
 ## 必要证据
 
@@ -22,6 +24,10 @@ Decision log that prevents scope creep and captures failure-packet-relevant idea
 - competition notes
 - allowed evidence wedge
 - delete-or-merge review cadence
+
+## 决策
+
+泛 agent tracing 暂缓。只保留能够增强 `agent-failure-packet` 的 packet-shaped trace evidence。
 
 ## 非目标
 
@@ -40,6 +46,9 @@ Decision log that prevents scope creep and captures failure-packet-relevant idea
 ## 文档
 
 - [产品基础](./docs/product-foundation.md)
+- [Defer Decision](./docs/defer-decision.md)
+- [Evidence Wedge](./docs/evidence-wedge.md)
+- [Review Cadence](./docs/review-cadence.md)
 - [OPT Overlay](./ops/opt-overlay.md)
 - [生产约束](./ops/constraints/production.md)
 - [主入口约束](./ops/constraints/main-entry.md)

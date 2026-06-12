@@ -19,12 +19,20 @@ jobs:
           test -f README.zh-CN.md
           test -f AGENTS.md
           test -f docs/product-foundation.md
+          test -f docs/defer-decision.md
+          test -f docs/evidence-wedge.md
+          test -f docs/review-cadence.md
           test -f ops/opt-overlay.md
           test -f ops/constraints/production.md
           test -f ops/constraints/main-entry.md
           test -f ops/skills/evolution.md
           grep -q "README.zh-CN.md" README.md
           grep -q "README.md" README.zh-CN.md
+          grep -q "does not ship a tracing backend" README.md
+          grep -q "tracing backend" README.zh-CN.md
+          grep -q "Do not build" docs/defer-decision.md
+          grep -q "Packet-Shaped Trace Fields" docs/evidence-wedge.md
+          grep -q "Delete Or Merge" docs/review-cadence.md
           grep -q "Do not modify OPT" ops/opt-overlay.md
           grep -q "Work on feature branches only" ops/opt-overlay.md
           grep -q "not a demo" ops/constraints/production.md
