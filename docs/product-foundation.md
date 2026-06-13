@@ -52,7 +52,7 @@ Avoid competing head-on with established tracing and observability platforms.
 ### Data Flow
 
 ```text
-trace idea -> packet-shaped evidence check -> merge into agent-failure-packet / reject / reopen decision
+trace idea -> packet-shaped evidence check -> move to agent-failure-packet / watch / reject / reopen decision
 ```
 
 ### Risks

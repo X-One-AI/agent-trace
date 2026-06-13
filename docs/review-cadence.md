@@ -12,6 +12,7 @@ Review this repository after every `agent-failure-packet` release.
 ## Actions
 
 - Merge useful packet-shaped fields into `agent-failure-packet`.
+- Watch ideas only when evidence may become packet-shaped in a future `agent-failure-packet` release.
 - Delete concepts that point toward a generic dashboard.
 - Keep reopen criteria explicit.
 - Do not add code here without a new product decision.
