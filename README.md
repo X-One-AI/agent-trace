@@ -2,6 +2,8 @@
 
 Languages: English | [中文](./README.zh-CN.md)
 
+> This is a decision repository, not an active product build. It exists to absorb, reject, or route ideas back into the released Safe Agent Operations tools.
+
 Generic AI agent tracing is deferred; only failure-packet-shaped evidence remains in scope.
 
 ## Status
@@ -28,6 +30,8 @@ This repository intentionally does not ship a tracing backend, dashboard, or CLI
 ## Decision
 
 Generic agent tracing is deferred. Only packet-shaped trace evidence that improves `agent-failure-packet` remains in scope.
+
+New trace ideas should be classified as `move-to-agent-failure-packet`, `watch`, or `reject`.
 
 ## Non-Goals
 
