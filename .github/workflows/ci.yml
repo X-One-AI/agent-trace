@@ -20,6 +20,7 @@ jobs:
           test -f AGENTS.md
           test -f docs/product-foundation.md
           test -f docs/defer-decision.md
+          test -f docs/governance-contract.md
           test -f docs/evidence-wedge.md
           test -f docs/review-cadence.md
           test -f ops/opt-overlay.md
@@ -31,6 +32,8 @@ jobs:
           grep -q "does not ship a tracing backend" README.md
           grep -q "tracing backend" README.zh-CN.md
           grep -q "Do not build" docs/defer-decision.md
+          grep -q "Absorption Contract" docs/governance-contract.md
+          grep -q "Rejection Contract" docs/governance-contract.md
           grep -q "Packet-Shaped Trace Fields" docs/evidence-wedge.md
           grep -q "Delete Or Merge" docs/review-cadence.md
           grep -q "Do not modify OPT" ops/opt-overlay.md

@@ -40,6 +40,7 @@ Avoid competing head-on with established tracing and observability platforms.
 - Every risky claim links to evidence, rule logic, or an explicit limitation.
 - The repository explicitly defers generic tracing.
 - Packet-shaped trace fields are documented for possible absorption into `agent-failure-packet`.
+- Governance defines when trace ideas are absorbed into `agent-failure-packet`, rejected, watched, or reconsidered.
 
 ## Architecture Brief
 
@@ -73,9 +74,10 @@ trace idea -> packet-shaped evidence check -> move to agent-failure-packet / wat
 1. Keep this as a decision repository until reopen criteria are met.
 2. Merge useful packet-shaped fields into `agent-failure-packet`.
 3. Delete generic dashboard ideas that weaken positioning.
-4. Use feature branches named `docs/<scope>`.
-5. Use Conventional/Angular commits such as `docs: clarify trace wedge`.
-6. Never push directly to `main`; open a pull request from the feature branch.
+4. Run the governance contract after each `agent-failure-packet` release.
+5. Use feature branches named `docs/<scope>`.
+6. Use Conventional/Angular commits such as `docs: clarify trace wedge`.
+7. Never push directly to `main`; open a pull request from the feature branch.
 
 ## Skipped Inputs
 

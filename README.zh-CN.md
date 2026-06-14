@@ -51,6 +51,7 @@ v0.1.0 明确不发布 tracing backend、dashboard 或 CLI。
 
 - [产品基础](./docs/product-foundation.md)
 - [Defer Decision](./docs/defer-decision.md)
+- [Governance Contract](./docs/governance-contract.md)
 - [Evidence Wedge](./docs/evidence-wedge.md)
 - [Review Cadence](./docs/review-cadence.md)
 - [OPT Overlay](./ops/opt-overlay.md)
