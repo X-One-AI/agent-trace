@@ -51,6 +51,7 @@ Inputs that require user or real-world data are recorded in `../x-one-skipped-in
 
 - [Product Foundation](./docs/product-foundation.md)
 - [Defer Decision](./docs/defer-decision.md)
+- [Governance Contract](./docs/governance-contract.md)
 - [Evidence Wedge](./docs/evidence-wedge.md)
 - [Review Cadence](./docs/review-cadence.md)
 - [OPT Overlay](./ops/opt-overlay.md)
